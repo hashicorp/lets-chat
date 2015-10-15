@@ -1,0 +1,102 @@
+{
+  "name": "lets-chat",
+  "version": "0.4.2",
+  "description": "A chat app for small teams.",
+  "license": "MIT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "stop": "pkill --signal SIGINT letschat",  
+    "prestart": "migroose",
+    "migrate": "migroose",
+    "test": "eslint ."
+  },
+  "engines": {
+    "node": "0.10.x",
+    "npm": "2.1.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sdelements/lets-chat.git"
+  },
+  "author": {
+    "name": "Houssam Haidar",
+    "email": "houssam@sdelements.com"
+  },
+  "contributors": [
+    {
+      "name": "Simon Bartlett",
+      "email": "simon@sdelements.com"
+    },
+    {
+      "name": "Shawn Gustaw",
+      "email": "shawn@sdelements.com"
+    },
+    {
+      "name": "Geoff Whittington",
+      "email": "geoff@sdelements.com"
+    },
+    {
+      "name": "Hanif Virani",
+      "email": "hanif@sdelements.com"
+    },
+    {
+      "name": "Jeffery Bain",
+      "email": "jeff@sdelements.com"
+    },
+    {
+      "name": "Ramanan Sivaranjan",
+      "email": "ramanan@sdelements.com"
+    }
+  ],
+  "keywords": [
+    "chat",
+    "group chat"
+  ],
+  "bugs": {
+    "url": "https://github.com/sdelements/lets-chat/issues"
+  },
+  "homepage": "https://github.com/sdelements/lets-chat",
+  "dependencies": {
+    "MD5": "~1.2.2",
+    "async": "^1.2.1",
+    "bcryptjs": "~2.2.0",
+    "body-parser": "^1.12.4",
+    "colors": "~1.1.0",
+    "compression": "^1.5.0",
+    "connect-assets": "^4.7.1",
+    "connect-mongo": "^0.8.1",
+    "cookie-parser": "^1.3.5",
+    "express.oi": "^0.0.19",
+    "helmet": "^0.10.0",
+    "i18n": "^0.5.0",
+    "js-yaml": "~3.3.1",
+    "less": "^2.5.1",
+    "lodash": "^3.9.3",
+    "migroose": "^0.5.0",
+    "migroose-cli": "^0.1.0",
+    "moment": "^2.10.3",
+    "mongoose": "~4.0.5",
+    "mongoose-unique-validator": "~0.4.1",
+    "mongoose-validate": "0.0.5",
+    "multer": "^0.1.8",
+    "node-uuid": "^1.4.3",
+    "node-xmpp-server": "1.0.0-alpha12",
+    "node_hash": "^0.2.0",
+    "nunjucks": "^1.3.4",
+    "on-finished": "^2.3.0",
+    "passport": "^0.2.2",
+    "passport-http": "^0.2.2",
+    "passport-http-bearer": "^1.0.1",
+    "passport-local": "^1.0.0",
+    "passport.socketio": "~3.5.1",
+    "require-directory": "~2.1.1",
+    "require-tree": "^1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-bower": "~0.20.0",
+    "grunt-bower-task": "~0.4.0",
+    "eslint": "^0.24.1"
+  }
+}
